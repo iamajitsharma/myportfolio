@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Sacramento&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --colorPrimary: #4db5ff;
+  --colorSecondary: #2c2c6c;
+  --colorBg: #1f1f38;
+  --colorWhite: #fff;
+  --colorLight: rgba(255, 255, 255, 0.6);
+  --container-width-lg: 80%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --transition: all 400ms ease;
+  --fontPoppins: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+}
+
+/*=========General Style==============*/
+
+section {
+  margin-top: 8rem;
+  height: 100vh;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--colorPrimary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--colorPrimary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--colorWhite);
+  color: var(--colorBg);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: var(--colorPrimary);
+  color: var(--colorBg);
+}

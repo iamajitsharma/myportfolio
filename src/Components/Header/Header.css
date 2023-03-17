@@ -1,0 +1,36 @@
+#header {
+  background: var(--colorBg);
+  height: 100vh;
+  padding: 2rem;
+}
+.hero_caption {
+  color: var(--colorWhite);
+  font-family: var(--fontPoppins);
+}
+
+.hero_caption h1 {
+  font-size: 3.5rem;
+}
+.hero_caption span {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.hero_img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero_img img {
+  background-repeat: no-repeat;
+}
+
+/*============CTA==========*/
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}

@@ -68,3 +68,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+.hero_profile {
+margin-top: -440px;
+position: absolute;
+width: 680px;
+height: 800px;
+top: 50%;
+right: -20px;
+z-index: 2;
+}
+
+.hero_profile img {
+position: absolute;
+height: 100%;
+width: 100%;
+object-fit: cover;
+z-index: 10;
+border-radius: 380px;
+left: 0;
+top: 0;
+}
+
+.circle {
+width: 680px;
+height: 680px;
+z-index: 2;
+background: var(--colorVariant);
+border-radius: 100%;
+position: absolute;
+}
+
+.hero_profile .circle {
+position: absolute;
+left: 0;
+bottom: 0;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: contain;
+}

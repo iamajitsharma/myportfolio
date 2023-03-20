@@ -1,29 +1,46 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import AjitSharma from "../../Assets/Images/AjitSharma_Profile.png";
-import AjitSharmaSVG from "../../Assets/Images/AjitSharma_VecotrProfile-01.svg";
+import AjitSharma from "../../Assets/Images/Ajit.png";
+
 import "./Header.css";
 import CTA from "./CTA";
 
-const Header = () => {
+const Header = (props) => {
+  const rorate = ["--i:0", "--i:1", "--i:2", "--i:3"];
   return (
-    <header id="header">
-      <Container>
-        <Row className="align-items-center">
-          <Col lg="6" className="header_left ">
-            <div className="hero_caption mb-5">
-              <span>Hello</span>
-              <h1>I 'm Ajit Sharma</h1>
-              <span>Frontend Developer</span>
-            </div>
-            <CTA />
-          </Col>
-          <Col lg="6" className="hero_img">
-            <img src={AjitSharmaSVG} alt="Ajit Sharma" />
-          </Col>
-        </Row>
-      </Container>
-    </header>
+    <section className="home" id="home">
+      <div className="home-content">
+        <h3>Hello, I'm</h3>
+        <h1>Ajit Sharma</h1>
+
+        <div className="social-media">
+          <a href="#">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="#">
+            <i class="ri-twitter-line"></i>
+          </a>
+          <a href="#">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </div>
+        <a href="#" className="btn">
+          Download
+        </a>
+      </div>
+      <div className="profession-container">
+        <div className="profession-box">
+          <div className="profession">
+            <i class="ri-code-s-slash-line"></i>
+            <h3>Web Developer</h3>
+          </div>
+          <div className="circle"></div>
+        </div>
+        <div className="overlay"></div>
+      </div>
+      <div className="home-img">
+        <img src={AjitSharma} />
+      </div>
+    </section>
   );
 };
 

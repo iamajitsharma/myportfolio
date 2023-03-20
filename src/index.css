@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Sacramento&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,19 +11,30 @@
 
 :root {
   --colorPrimary: #4db5ff;
-  --colorSecondary: #2c2c6c;
-  --colorBg: #1f1f38;
+  --colorSecondary: #000080;
+  --colorVariant: #7865ff;
   --colorWhite: #fff;
   --colorLight: rgba(255, 255, 255, 0.6);
-  --container-width-lg: 80%;
+  --colorHeading: #273746;
+  --container-width-lg: 90%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --transition: all 400ms ease;
   --fontPoppins: "Poppins", sans-serif;
+  --grandientBg: linear-gradient(
+    to right top,
+    #41f9ff,
+    #00e6ff,
+    #00d1ff,
+    #00bcfd,
+    #21a6f3
+  );
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -36,30 +47,41 @@ body {
 }
 
 /*=========General Style==============*/
-
-section {
-  margin-top: 8rem;
-  height: 100vh;
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
 }
 
-.btn {
+.button {
   width: max-content;
   display: inline-block;
-  color: var(--colorPrimary);
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
+  color: var(--colorWhite);
+  background: var(--colorVariant);
+  padding: 0.75rem 1.4rem;
+  border-radius: 50px;
   cursor: pointer;
-  border: 1px solid var(--colorPrimary);
+  border: none;
   transition: var(--transition);
+  font-family: var(--fontPoppins);
 }
 
-.btn:hover {
+.button:hover {
   background: var(--colorWhite);
   color: var(--colorBg);
   border-color: transparent;
 }
 
-.btn-primary {
-  background: var(--colorPrimary);
-  color: var(--colorBg);
+.button-primary {
+  background: var(--colorSecondary);
+  color: var(--colorWhite);
+}
+
+.button-white {
+  background-color: var(--colorWhite);
+  color: var(--colorHeading);
+}
+
+.button-white:hover {
+  background-color: var(--colorHeading);
+  color: var(--colorWhite);
 }

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
@@ -12,7 +11,7 @@ const Navbar = () => {
   return (
     <nav>
       <a
-        href="#"
+        href="#active"
         onClick={() => setActiveNav("#")}
         className={activeNav === "#" ? "active" : ""}
       >

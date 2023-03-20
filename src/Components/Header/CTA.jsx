@@ -1,15 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
     <div className="cta">
-      <a href="#" className="btn">
-        Download CV
-      </a>
-      <a href="#" className="btn-primary">
-        Let's Talk
-      </a>
+      <button className="button button-primary">Download</button>
+      <button className="button">Let's Talk</button>
     </div>
   );
 };

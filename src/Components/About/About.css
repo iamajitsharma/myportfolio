@@ -1,0 +1,35 @@
+.about {
+  background: hsl(201, 66%, 91%);
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+
+.featured_img {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  left: 0;
+  top: 0;
+}
+.featured_img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.about-content {
+  width: 50%;
+  position: relative;
+  padding: 1rem;
+}
+.about-title {
+  text-align: left;
+}
+.about-content p {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 2.8rem;
+}

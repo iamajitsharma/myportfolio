@@ -7,15 +7,17 @@
   outline: 0;
   list-style: none;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-  --colorPrimary: #4db5ff;
-  --colorSecondary: #000080;
-  --colorVariant: #7865ff;
-  --colorWhite: #fff;
+  --colorPrimary: #1b9efb;
+  --colorSecondary: #bb18f9;
+  --colorVariant: #1b9efb;
+  --colorWhite: #f4f4f4;
   --colorLight: rgba(255, 255, 255, 0.6);
-  --colorHeading: #273746;
+  --colorBg: #0e1b31;
+  --colorText: #333;
   --container-width-lg: 90%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
@@ -42,46 +44,77 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   line-height: 1.7;
+  background-color: var(--colorBg);
 }
 
 /*=========General Style==============*/
+section {
+  min-height: 100vh;
+  padding: 0rem 7% 2rem;
+  margin: 0;
+  position: relative;
+}
+
+.section-title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: var(--colorWhite);
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-title h1::before {
+  content: "";
+  width: 10%;
+  height: 3px;
+  background-color: var(--colorPrimary);
+  position: absolute;
+  margin-top: 4.5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.button {
-  width: max-content;
+.btn-primary,
+.btn-secondary {
   display: inline-block;
+  padding: 1rem 2.8rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.2rem 0.5rem var(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0.5 ease;
+}
+
+.btn-primary {
+  background-color: var(--colorPrimary);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--colorPrimary);
+  border: 2px solid var(--colorVariant);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border: 2px solid var(--colorPrimary);
+  color: var(--colorPrimary);
+  transition: 0.5s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--colorPrimary);
   color: var(--colorWhite);
-  background: var(--colorVariant);
-  padding: 0.75rem 1.4rem;
-  border-radius: 50px;
-  cursor: pointer;
-  border: none;
-  transition: var(--transition);
-  font-family: var(--fontPoppins);
-}
-
-.button:hover {
-  background: var(--colorWhite);
-  color: var(--colorBg);
-  border-color: transparent;
-}
-
-.button-primary {
-  background: var(--colorSecondary);
-  color: var(--colorWhite);
-}
-
-.button-white {
-  background-color: var(--colorWhite);
-  color: var(--colorHeading);
-}
-
-.button-white:hover {
-  background-color: var(--colorHeading);
-  color: var(--colorWhite);
+  transition: 0.5s ease;
 }

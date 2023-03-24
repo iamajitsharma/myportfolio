@@ -1,26 +1,24 @@
-section {
-  min-height: 100vh;
-  padding: 10rem 7% 2rem;
-}
-
 .home {
   display: flex;
   align-items: center;
+  z-index: 1000;
+  height: 768px;
 }
 
 .home .home-content {
   max-width: 44rem;
+  color: var(--colorWhite);
 }
 
 .home-content h3 {
-  font-size: 3.2rem;
-  font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 500;
   line-height: 0.3;
 }
 
 .home-content h1 {
   font-size: 5.6rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 0.3rem;
 }
 
@@ -34,8 +32,10 @@ section {
   border: 0.2rem solid var(--colorPrimary);
   border-radius: 50%;
   box-shadow: 0 0.2rem 0.5rem var(0, 0, 0, 0.6);
-  margin: 0.5rem 1.5rem 3rem 0;
+  margin: 1.5rem 1.5rem 3rem 0;
   transition: 0.5s ease;
+  font-size: 1.8rem;
+  color: var(--colorPrimary);
 }
 
 .home-content .social-media a:hover {
@@ -43,16 +43,9 @@ section {
   color: white;
 }
 
-.btn {
-  display: inline-block;
-  padding: 1.2rem 2.8rem;
-  background-color: var(--colorPrimary);
-  border-radius: 0.6rem;
-  box-shadow: 0 0.2rem 0.5rem var(0, 0, 0, 0.6);
-  font-size: 1.6rem;
-  color: white;
-  font-weight: 600;
-  transition: 0.5 ease;
+.home-content p {
+  font-size: 1.5rem;
+  color: var(--colorWhite);
 }
 
 .home .profession-container {
@@ -62,7 +55,6 @@ section {
   transform: translateY(-50%);
   width: 768px;
   height: 768px;
-
   overflow: hidden;
   pointer-events: none;
 }
@@ -89,7 +81,7 @@ section {
   transform: rotate(calc(360deg / 4 * 0));
   transform-origin: 384px;
   left: 0;
-  background: white;
+  background: var(--colorBg);
   padding: 10px 0;
 }
 
@@ -137,4 +129,10 @@ section {
 .home-img img {
   position: relative;
   width: 100%;
+}
+
+/*=====CTA========*/
+.cta {
+  display: flex;
+  gap: 1.5rem;
 }

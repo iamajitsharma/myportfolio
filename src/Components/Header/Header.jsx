@@ -1,31 +1,28 @@
 import React from "react";
-import AjitSharma from "../../Assets/Images/Ajit.png";
-
+import AjitSharma from "../../Assets/Images/Ajit_Sharma.png";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import CTA from "./CTA";
 
 const Header = (props) => {
-  const rorate = ["--i:0", "--i:1", "--i:2", "--i:3"];
   return (
     <section className="home" id="home">
       <div className="home-content">
         <h3>Hello, I'm</h3>
         <h1>Ajit Sharma</h1>
-
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          illum voluptas facere libero expedita, sint vitae reprehenderit? Velit
+          iste nihil repudiandae doloribus expedita asperiores, debitis,
+          blanditiis veniam in eaque illo.
+        </p>
         <div className="social-media">
-          <a href="#">
-            <i class="ri-linkedin-fill"></i>
-          </a>
-          <a href="#">
-            <i class="ri-twitter-line"></i>
-          </a>
-          <a href="#">
-            <i class="ri-instagram-line"></i>
-          </a>
+          <Link to="www.facebook.com" className="ri-linkedin-fill"></Link>
+          <Link to="www.facebook.com" className="ri-twitter-line"></Link>
+          <Link to="www.facebook.com" className="ri-instagram-line"></Link>
+          <Link to="www.facebook.com" className="ri-youtube-line"></Link>
         </div>
-        <a href="#" className="btn">
-          Download
-        </a>
+        <CTA />
       </div>
       <div className="profession-container">
         <div className="profession-box">
@@ -38,7 +35,7 @@ const Header = (props) => {
         <div className="overlay"></div>
       </div>
       <div className="home-img">
-        <img src={AjitSharma} />
+        <img src={AjitSharma} alt="Ajit Sharma Portfolio" />
       </div>
     </section>
   );

@@ -1,0 +1,62 @@
+.skills-heading h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--colorWhite);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.skills-heading h1::before {
+  content: "";
+  width: 10rem;
+  height: 3px;
+  background-color: var(--colorPrimary);
+  position: absolute;
+  margin-top: 4.5rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  row-gap: 6rem;
+  padding: 0.8rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill {
+  margin: 0 auto;
+  width: 15rem;
+  height: 15rem;
+  font-size: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0.8rem;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.CircularProgressbar-path {
+  stroke: var(--colorPrimary) !important;
+}
+.CircularProgressbar-trail {
+  stroke: var(--colorWhite) !important;
+}
+.CircularProgressbar-text {
+  fill: var(--colorSecondary) !important;
+}
+
+.skill-title {
+  color: var(--colorBg);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-title span {
+  font-size: 1.6rem;
+}

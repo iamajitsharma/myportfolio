@@ -14,7 +14,7 @@ const aboutMe = [
 
 const About = () => {
   return (
-    <section>
+    <section id="About">
       <Heading heading="About Me" />
       <Container>
         <div className="flex flex-col md:flex-row w-full items-center justify-center py-6 mx-auto">

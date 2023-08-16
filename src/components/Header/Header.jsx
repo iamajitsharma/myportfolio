@@ -4,10 +4,8 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <section className="">
+    <section id="Home">
       <div className="flex items-center justify-between gap-4 py-2 px-8 ">
-        <img src="https://htmldemo.net/lendex/p2/img/logo.png" alt="" />
-
         <Navbar />
         <Button label="Hire me" standard size="lg" />
       </div>

@@ -20,7 +20,7 @@ const skills = [
 
 const Skill = () => {
   return (
-    <section>
+    <section id="Skill">
       <Heading heading="Skill" />
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">

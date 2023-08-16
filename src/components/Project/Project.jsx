@@ -23,7 +23,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <section>
+    <section id="Project">
       <Heading heading="Projects" />
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full items-center justify-items-center mt-14 overflow-hidden">

@@ -11,7 +11,7 @@ const Button = ({ outline, standard, size, props, label }) => {
         : "border-none"
     }
     ${standard ? "bg-yellow-400 text-neutral-800" : ""}
-    ${size === "lg" ? "h-11 px-8 rounded-md" : "h-9 px-2 rounded-md"}
+    ${size === "lg" ? "h-11 px-4 md:px-8 rounded-md" : "h-9 px-2 rounded-md"}
     `}
     >
       {label}

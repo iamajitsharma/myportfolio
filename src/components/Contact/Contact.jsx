@@ -26,7 +26,7 @@ const Contact = () => {
     <section id="Contact">
       <Heading heading="Contact" />
       <Container>
-        <div className="flex flex-col md:flex-row justify-between gap-6 mt-16 w-full p-4">
+        <div className="flex flex-col-reverse md:flex-row justify-between gap-6 mt-16 w-full p-4">
           <div className="w-full md:w-1/2">
             <form>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 w-full">

@@ -52,7 +52,9 @@ const About = () => {
                 ))}
               </ul>
               <div className="mx-auto md:mx-0">
-                <Button label="Download Resume" size="lg" standard />
+                <Button href="/AjitSharmaResume_FrontendDeveloper.pdf">
+                  Download Resume
+                </Button>
               </div>
             </div>
           </div>

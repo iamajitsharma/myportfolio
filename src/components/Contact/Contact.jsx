@@ -47,7 +47,7 @@ const Contact = () => {
                 />
                 <TextArea className="col-span-2" rows={6} />
               </div>
-              <Button label="Submit" standard size="lg" />
+              <Button>Submit</Button>
             </form>
           </div>
           <div className="w-fulll md:w-1/2">

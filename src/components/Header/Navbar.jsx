@@ -23,7 +23,7 @@ const Navbar = () => {
   const isTablet = useMediaQuery({ maxWidth: deviceSize.tablet });
 
   return (
-    <div className="fixed bottom-3 bg-black/30 backdrop-blur-md w-max px-8 py-4  transform left-1/2 -translate-x-1/2 rounded-full">
+    <div className="fixed bottom-3 bg-slate-200/50 backdrop-blur-md w-max px-8 py-4  transform left-1/2 -translate-x-1/2 rounded-full">
       <ul className="flex items-center gap-3 justify-center text-2xl text-white sm:gap-5 ">
         {navLinks.map((item) => (
           <li

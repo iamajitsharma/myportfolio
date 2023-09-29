@@ -16,7 +16,8 @@ const Header = () => {
         />
 
         <Navbar />
-        <Button label="Hire me" standard size="lg" />
+
+        <Button size="lg">Hire Me</Button>
       </div>
       <div className="flex items-start justify-between gap-0 w-full h-full md:items-center">
         <div className="flex flex-col p-4 gap-2 w-full md:w-1/2 md:p-6">
@@ -33,9 +34,18 @@ const Header = () => {
             repudiandae cum dicta nam corrupti deserunt.
           </p>
           <span className="flex items-center justify-center md:justify-start gap-3">
-            <Button label="Download Resume" standard size="lg" />
+            <Button
+              size="lg"
+              href={"/AjitSharmaResume_FrontendDeveloper.pdf"}
+              download
+              target={"_blank"}
+            >
+              Download
+            </Button>
 
-            <Button label="Let's Talk" outline size="lg" />
+            <Button size="lg" variant="outline">
+              Let's Talk
+            </Button>
           </span>
         </div>
         <div className="hidden md:block shrink-0 w-1/2 h-full overflow-hidden">
